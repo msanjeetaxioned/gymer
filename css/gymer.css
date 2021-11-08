@@ -67,7 +67,7 @@ header div a {
     border-radius: 3px;
     display: inline-block;
     color: rgba(72, 212, 148, 1);
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     transition: color 1s ease-in-out;
 }
@@ -97,4 +97,39 @@ header div a:hover {
     text-align: center;
     text-transform: capitalize;
     transform: translate(-50%, -50%);
+}
+
+/* Page Content Section*/
+#content { background: black; }
+/* Content Stats sub-section*/
+#content-stats {
+    padding-top: 65px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#content-stats li { 
+    margin-right: 75px;
+    display: flex;
+}
+
+#content-stats li:last-child { margin-right: 0; }
+
+#content-stats li figure { 
+    margin-right: 20px;
+    align-self: center;
+}
+
+#content-stats li .stat-number {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#content-stats li .stat-name {
+    color: rgba(70, 70, 70, 1);;
+    font-size: 12px;
+    text-transform: capitalize;
 }
