@@ -8,7 +8,7 @@ a {
 }
 
 .wrapper {
-    width: 58.39%;
+    width: 57.867%;
     margin: 0 auto;
 }
 
@@ -53,17 +53,21 @@ ul.carousel-dots li a:hover { background: rgba(72, 212, 148, 1); }
     margin-right: 30px;
 }
 
-.fifty-percent h3 {
+.fifty-percent > h3 {
     color: rgba(72, 212, 148, 1);
     font-size: 36px;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.fifty-percent p {
+.fifty-percent > p {
     color: rgba(70, 70, 70, 1);
     font-size: 14px;
     line-height: 22px;
+}
+
+.display-none {
+    display: none;
 }
 
 /* Header CSS */
@@ -187,7 +191,7 @@ header div a:hover {
 #fitness > * { flex: 1; }
 
 #fitness .part1 > * { 
-    margin-right: 100px;
+    margin-right: 22.22%;
     margin-bottom: 30px;
 }
 
@@ -239,7 +243,6 @@ header div a:hover {
 #images .images-slider li { display: inline-block; }
 
 /* Schedule */
-
 #schedule { 
     margin-top: 150px;
     margin-bottom: 150px;
@@ -304,6 +307,85 @@ header div a:hover {
     transition: color 1s ease-in-out;
 }
 
-#schedule-displayed .join-button a:hover {
+#schedule-displayed .join-button a:hover { color: white; }
+
+/* Trainers */
+#trainers ul {
+    margin-top: 50px;
+    display: flex;
+}
+
+#trainers ul li {
+    margin-right: 5.35%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#trainers ul li:nth-of-type(2) { margin-top: 40px; }
+#trainers ul li:last-child { margin-right: 0; }
+#trainers figure { margin-bottom: 40px; }
+#trainers figure > img { box-shadow: 9px 9px rgba(72, 212, 148, 1); }
+
+#trainers li > h4 {
+    margin-bottom: 10px;
     color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#trainers li > .trainer-speciality {
+    margin-bottom: 30px;
+    color: rgba(70, 70, 70, 1);
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+#trainers li > .trainer-description {
+    color: rgba(70, 70, 70, 1);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* Featured Services */
+#featured-services {
+    padding-bottom: 75px;
+    margin-top: 150px;
+}
+
+#featured-services ul.services {
+    margin-top: 50px;
+    display: flex;
+}
+
+#featured-services ul.services > li {
+    padding: 60px 50px;
+    margin-right: 2.85%;
+    background: rgba(72, 212, 148, 1);
+    color: white;
+    flex: 0 0 31.433333%; 
+}
+
+#featured-services ul.services > li:nth-of-type(3) { margin-right: 0;}
+
+#featured-services ul.services figure {
+    margin-bottom: 30px;
+}
+
+#featured-services ul.services img {
+    max-width: 70px;
+}
+
+#featured-services ul.services h4 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#featured-services ul.services p {
+    color: rgba(196, 241, 221, 1);
+    font-size: 14px;
+    line-height: 22px;
 }
