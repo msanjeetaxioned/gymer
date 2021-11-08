@@ -18,6 +18,30 @@ figure > img {
     display: block;
 }
 
+ul.carousel-dots {
+    margin-top: 35px;
+    font-size: 0;
+    text-align: center;
+}
+
+ul.carousel-dots li {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+ul.carousel-dots li:last-child { margin-right: 0; }
+
+ul.carousel-dots li a {
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    background: white;
+    font-size: 0;
+}
+
+ul.carousel-dots li.selected a { background: rgba(72, 212, 148, 1); }
+ul.carousel-dots li a:hover { background: rgba(72, 212, 148, 1); }
+
 /* Header CSS */
 header {
     width: 86.45%;
@@ -200,3 +224,13 @@ header div a:hover {
     font-size: 14px;
     line-height: 22px;
 }
+
+/* Images */
+#images .images-slider {
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#images .images-slider li { display: inline-block; }
