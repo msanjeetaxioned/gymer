@@ -129,7 +129,45 @@ header div a:hover {
 }
 
 #content-stats li .stat-name {
-    color: rgba(70, 70, 70, 1);;
+    color: rgba(70, 70, 70, 1);
     font-size: 12px;
     text-transform: capitalize;
+}
+
+/* Fitness */
+#fitness { display: flex; }
+#fitness > * { flex: 1; }
+#fitness .part1 > * { 
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+#fitness .part1 > *:last-child { margin-bottom: 0; }
+
+#fitness .part1 h3 {
+    color: rgba(72, 212, 148, 1);
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 44px;
+    text-transform: capitalize;
+}
+
+#fitness .part1 p {
+    color: rgba(70, 70, 70, 1);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#fitness .part1 a {
+    padding: 20px;
+    border-radius: 3px;
+    display: inline-block;
+    background: rgba(72, 212, 148, 1);
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#fitness .part2 > img {
+    box-shadow: 9px 9px rgba(72, 212, 148, 1);
 }
