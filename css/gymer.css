@@ -42,6 +42,30 @@ ul.carousel-dots li a {
 ul.carousel-dots li.selected a { background: rgba(72, 212, 148, 1); }
 ul.carousel-dots li a:hover { background: rgba(72, 212, 148, 1); }
 
+.fifty-percent > h3 {
+    width: calc(50% - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.fifty-percent > p {
+    width: calc(50% - 30px);
+    margin-right: 30px;
+}
+
+.fifty-percent h3 {
+    color: rgba(72, 212, 148, 1);
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.fifty-percent p {
+    color: rgba(70, 70, 70, 1);
+    font-size: 14px;
+    line-height: 22px;
+}
+
 /* Header CSS */
 header {
     width: 86.45%;
@@ -195,34 +219,13 @@ header div a:hover {
     transition: background 1s ease-in-out;
 }
 
-#fitness .part1 a:hover { background: rgba(70, 70, 70, 1); }
+#fitness .part1 a:hover { background: rgba(70, 70, 70, 0.8); }
 #fitness .part2 > img { box-shadow: 9px 9px rgba(72, 212, 148, 1); }
 
 /* Classes */
 #classes {
     margin-top: 140px;
     margin-bottom: 50px;
-}
-
-#classes > * {
-    width: calc(50% - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-#classes > *:last-child { margin-bottom: 0; }
-
-#classes h3 {
-    color: rgba(72, 212, 148, 1);
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-
-#classes p {
-    color: rgba(70, 70, 70, 1);
-    font-size: 14px;
-    line-height: 22px;
 }
 
 /* Images */
@@ -234,3 +237,73 @@ header div a:hover {
 }
 
 #images .images-slider li { display: inline-block; }
+
+/* Schedule */
+
+#schedule { 
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#schedule > ul {
+    margin-top: 50px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+#schedule > ul a {
+    padding: 15px;
+    border-radius: 3px;
+    display: inline-block;
+    color: rgba(72, 212, 148, 1);
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: background 1s ease-in-out;
+}
+
+#schedule > ul a:hover {
+    background: rgba(72, 212, 148, 1);
+    color: white;
+}
+
+#schedule li.selected a {
+    background: rgba(72, 212, 148, 1);
+    color: white;
+}
+
+#schedule-displayed ul.row {
+    border-right: 2px solid rgba(70, 70, 70, 1);
+    border-left: 2px solid rgba(70, 70, 70, 1);
+    border-bottom: 2px solid rgba(70, 70, 70, 1);
+    display: flex;
+    font-size: 14px;
+}
+
+#schedule-displayed ul.row:first-child { border-top: 2px solid rgba(70, 70, 70, 1); }
+
+#schedule-displayed ul.row li {
+    padding: 20px 10px;
+    border-right: 2px solid rgba(70, 70, 70, 1);
+    color: rgba(70, 70, 70, 1);
+    text-transform: capitalize;
+}
+
+#schedule-displayed ul.row .training-name { flex: 5; }
+#schedule-displayed ul.row .time { flex: 7; }
+#schedule-displayed ul.row .trainer-name { flex: 5; }
+
+#schedule-displayed ul.row .join-button { 
+    border-right: none;
+    flex: 3; 
+    text-align: center;
+}
+
+#schedule-displayed .join-button a {
+    color: rgba(72, 212, 148, 1);
+    transition: color 1s ease-in-out;
+}
+
+#schedule-displayed .join-button a:hover {
+    color: white;
+}
