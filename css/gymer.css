@@ -1,0 +1,100 @@
+/* Common CSS */
+* { box-sizing: border-box; }
+body { font-family: Helvetica, sans-serif; }
+
+a { 
+    color: unset;
+    text-decoration: none; 
+}
+
+.wrapper {
+    width: 58.39%;
+    margin: 0 auto;
+}
+
+figure > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header CSS */
+header {
+    width: 86.45%;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+header h1 {
+    padding-top: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    flex: auto;
+}
+
+header ul li { margin-right: 35px; }
+header ul li:last-child { margin-right: 0; }
+
+header .selected a {
+    border-bottom: 2px solid white;
+}
+
+header li a {
+    padding: 10px 0;
+    display: inline-block;
+    color: rgba(175, 170, 177, 1);
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: color 1s ease-in-out;
+}
+
+header li a:hover { color: rgba(72, 212, 148, 1); }
+
+header div a {
+    padding: 10px 15px;
+    border: 1px solid rgba(72, 212, 148, 1);
+    border-radius: 3px;
+    display: inline-block;
+    color: rgba(72, 212, 148, 1);
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: color 1s ease-in-out;
+}
+
+header div a:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+/* Banner Section */
+#banner {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#banner h2 {
+    width: 34.83%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 86px;
+    font-weight: bold;
+    line-height: 106px;
+    text-align: center;
+    text-transform: capitalize;
+    transform: translate(-50%, -50%);
+}
