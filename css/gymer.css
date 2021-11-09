@@ -106,7 +106,7 @@ header li a {
 
 header li a:hover { color: rgba(72, 212, 148, 1); }
 
-header div a {
+#contact-button {
     padding: 10px 15px;
     border: 1px solid rgba(72, 212, 148, 1);
     border-radius: 3px;
@@ -117,9 +117,24 @@ header div a {
     transition: color 1s ease-in-out;
 }
 
-header div a:hover {
+#contact-button:hover {
     color: white;
     border: 1px solid white;
+}
+
+header > .dropdown { display: none; }
+
+header > .dropdown a {
+    font-size: 0;
+}
+
+header > .dropdown a::before {
+    content: "\f0c9";
+    margin-right: 15px;
+    color: rgba(175, 170, 177, 1);
+    font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 
 /* Banner Section */
@@ -622,6 +637,8 @@ footer .copyright-info > a:hover { color: white; }
         justify-content: center;
     }
 
+    #content-stats li { margin-right: 45px; }
+
     #fitness .part1 > * { margin: 0 0 20px 10px; }
 
     #fitness .part1 h3 {
@@ -697,4 +714,99 @@ footer .copyright-info > a:hover { color: white; }
     footer .about-links > .links { margin-right: 5%; }
     footer .about-links > .subscribe { flex-basis: 40%; }
     .about-links > * > h4 { margin-bottom: 20px; }
+}
+
+/* CSS for Mobile (<768) Width */
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        width: calc(100% - 10px);
+        margin: 0 5px;
+    }
+
+    ul.carousel-dots {
+        margin-top: 10px;
+    }
+
+    .fifty-percent > h3 {
+        width: 100%;
+        margin: 0 0 20px 0;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+    }
+    
+    .fifty-percent > p {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    header { width: calc(100% - 20px); }
+
+    header ul {
+        margin-left: 15px;
+        justify-content: unset;
+    }
+
+    header ul li { margin-right: 15px; }
+    header > .dropdown { display: block; }
+
+    #banner h2 {
+        width: 50%;
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    header ul li:not(.selected) { display: none; }
+
+    #content-stats {
+        padding: 30px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #content-stats li {
+        flex-basis: calc(50% - 15px);
+        margin-right: 0; 
+    }
+
+    #content-stats li:nth-child(-n + 2) { margin-bottom: 15px; }
+    #content-stats li .stat-number { font-size: 18px; }
+
+    #fitness { flex-direction: column; }
+
+    #fitness .part1 {
+        margin-bottom: 20px;
+        flex-basis: unset;
+        text-align: center;
+    }
+
+    #fitness .part1 > * { margin: 0 0 20px 0px; }
+
+    #fitness .part1 h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    #fitness .part1 a { padding: 12px 10px; }
+
+    #fitness .part2 { 
+        flex-basis: calc(100% - 9px);
+        text-align: center;
+    }
+
+    #fitness .part2 > img {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    #classes { 
+        margin-top: 39px;
+        margin-bottom: 30px;
+    }
+
+    #schedule { 
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
