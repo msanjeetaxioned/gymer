@@ -20,10 +20,7 @@ figure > img {
 }
 
 .dropdown { display: none; }
-
-.dropdown a {
-    font-size: 0;
-}
+.dropdown a { font-size: 0; }
 
 .dropdown a::before {
     content: "\f0c9";
@@ -106,10 +103,7 @@ header ul {
 
 header ul li { margin-right: 35px; }
 header ul li:last-child { margin-right: 0; }
-
-header .selected a {
-    border-bottom: 2px solid white;
-}
+header .selected a { border-bottom: 2px solid white; }
 
 header li a {
     padding: 10px 0;
@@ -197,10 +191,7 @@ header li a:hover { color: rgba(72, 212, 148, 1); }
 
 /* Fitness */
 #fitness { display: flex; }
-
-#fitness .part1 {
-    flex-basis: 50%;
-}
+#fitness .part1 { flex-basis: 50%; }
 
 #fitness .part1 > * { 
     margin-right: 22.22%;
@@ -640,7 +631,6 @@ footer .copyright-info > a:hover { color: white; }
     }
 
     #content-stats li { margin-right: 45px; }
-
     #fitness .part1 > * { margin: 0 0 20px 10px; }
 
     #fitness .part1 h3 {
@@ -777,7 +767,6 @@ footer .copyright-info > a:hover { color: white; }
 
     #content-stats li:nth-child(-n + 2) { margin-bottom: 15px; }
     #content-stats li .stat-number { font-size: 18px; }
-
     #fitness { flex-direction: column; }
 
     #fitness .part1 {
@@ -827,7 +816,6 @@ footer .copyright-info > a:hover { color: white; }
     }
 
     #schedule > ul > li:not(.selected) { display: none; }
-
     #schedule > ul a { padding: 10px; }
     #schedule-displayed ul.row li { padding: 10px; }
 
