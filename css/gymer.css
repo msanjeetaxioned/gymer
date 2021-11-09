@@ -842,14 +842,17 @@ footer .copyright-info > a:hover { color: white; }
 
     #featured-services ul.services { flex-direction: column; }
 
-    #featured-services ul.services > li { 
+    #featured-services ul.services > li {
+        max-width: 300px;
+        width: 50%;
+        min-width: 256px;
         padding: 20px;
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin: 0 auto 10px auto;
         display: block;
         text-align: center;
     }
 
+    #featured-services ul.services > li:nth-of-type(3) { margin-right: auto; }
     #featured-services ul.services figure { margin-bottom: 15px; }
     #featured-services ul.services img { margin: 0 auto; }
 
