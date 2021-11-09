@@ -449,4 +449,101 @@ header div a:hover {
 #contact-us form #contact-us-submit:hover {
     background: white;
     cursor: pointer;
- }
+}
+
+/* Footer CSS */
+footer { background: black; }
+
+footer > .wrapper {
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+footer .about-links {
+    margin-bottom: 155px;
+    display: flex; 
+}
+
+footer .about-links > .about {
+    margin-right: 11.60%;
+    flex-basis: 31.74%;
+}
+
+footer .about-links > .links { margin-right: 17.86%; }
+footer .about-links > .subscribe { flex-basis: 31.74%; }
+
+.about-links > * > h4 {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-links > * > p {
+    color: rgba(70, 70, 70, 1);
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.links > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.links > ul > li { margin-bottom: 15px; }
+
+.links li > a {
+    display: inline-block;
+    color: rgba(72, 212, 148, 1);
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: color 1s ease-in-out;
+}
+
+.links li > a:hover { color: white; }
+.subscribe > p { margin-bottom: 15px; }
+
+.subscribe > form {
+    display: flex;
+    font-size: 0;
+}
+
+.subscribe > form > * { display: inline-block; }
+
+#subscribe-email-id {
+    padding: 10px;
+    border: 2px solid white;
+    background: black;
+    color: rgba(70, 70, 70, 1);
+    font-size: 13px;
+}
+
+#subscribe-submit {
+    padding: 12px;
+    border: none;
+    background: rgba(72, 212, 148, 1);
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 1s ease-in-out;
+}
+
+#subscribe-submit:hover {
+    background: white;
+    cursor: pointer;
+}
+
+footer .copyright-info {
+    color: rgba(70, 70, 70, 1);
+    font-size: 13px;
+    text-align: center;
+}
+
+footer .copyright-info > a {
+    color: rgba(72, 212, 148, 1);
+    transition: color 1s ease-in-out;
+}
+
+footer .copyright-info > a:hover { color: white; }
