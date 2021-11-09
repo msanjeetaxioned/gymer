@@ -57,6 +57,7 @@ ul.carousel-dots li a:hover { background: rgba(72, 212, 148, 1); }
     color: rgba(72, 212, 148, 1);
     font-size: 36px;
     font-weight: bold;
+    line-height: 44px;
     text-transform: capitalize;
 }
 
@@ -547,3 +548,42 @@ footer .copyright-info > a {
 }
 
 footer .copyright-info > a:hover { color: white; }
+
+/* CSS for 1024px to 1265px Width */
+@media only screen and (max-width: 1265px) {
+    .wrapper {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .fifty-percent > h3 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    #banner h2 {
+        width: 50%;
+        font-size: 70px;
+        line-height: 90px;
+    }
+
+    #content-stats li .stat-number { font-size: 24px; }
+    #content-stats { padding-bottom: 75px; }
+    #classes { margin-top: 75px; }
+
+    #schedule { 
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    #trainers li > h4 { font-size: 20px; }
+    #featured-services { margin-top: 75px; }
+    #contact-us > .wrapper {  padding: 75px 0; }
+
+    footer > .wrapper {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    footer .about-links { margin-bottom: 60px; }
+}
