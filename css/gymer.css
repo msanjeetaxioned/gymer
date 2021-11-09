@@ -793,15 +793,12 @@ footer .copyright-info > a:hover { color: white; }
     }
 
     #fitness .part1 a { padding: 12px 10px; }
-
-    #fitness .part2 { 
-        flex-basis: 100%;
-        text-align: center;
-    }
+    #fitness .part2 { flex-basis: 100%; }
 
     #fitness .part2 > img {
         max-width: 540px;
         width: calc(100% - 9px);
+        margin: 0 auto;
     }
 
     #classes { 
@@ -949,4 +946,9 @@ footer .copyright-info > a:hover { color: white; }
     #subscribe-email-id { padding: 8px; }
     #subscribe-submit { padding: 10px; }
     footer .copyright-info { line-height: 18px; }
+}
+
+/* CSS for < 570px Width */
+@media only screen and (max-width: 570px) {
+    #fitness .part2 > img { margin: 0; }
 }
