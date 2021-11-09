@@ -786,13 +786,13 @@ footer .copyright-info > a:hover { color: white; }
     #fitness .part1 a { padding: 12px 10px; }
 
     #fitness .part2 { 
-        flex-basis: calc(100% - 9px);
+        flex-basis: 100%;
         text-align: center;
     }
 
     #fitness .part2 > img {
         max-width: 540px;
-        margin: 0 auto;
+        width: calc(100% - 9px);
     }
 
     #classes { 
