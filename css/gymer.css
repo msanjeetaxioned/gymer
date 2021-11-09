@@ -818,7 +818,14 @@ footer .copyright-info > a:hover { color: white; }
 
     #schedule > ul > li:not(.selected) { display: none; }
     #schedule > ul a { padding: 10px; }
-    #schedule-displayed ul.row li { padding: 10px; }
+    #schedule-displayed ul.row { font-size: 13px; }
+
+    #schedule-displayed ul.row li { 
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     #trainers ul {
         width: 100%;
