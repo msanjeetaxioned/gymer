@@ -8,6 +8,7 @@ a {
 }
 
 .wrapper {
+    max-width: 1111px;
     width: 57.867%;
     margin: 0 auto;
 }
@@ -16,6 +17,21 @@ figure > img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.dropdown { display: none; }
+
+.dropdown a {
+    font-size: 0;
+}
+
+.dropdown a::before {
+    content: "\f0c9";
+    margin-right: 15px;
+    color: rgba(175, 170, 177, 1);
+    font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 
 ul.carousel-dots {
@@ -120,21 +136,6 @@ header li a:hover { color: rgba(72, 212, 148, 1); }
 #contact-button:hover {
     color: white;
     border: 1px solid white;
-}
-
-header > .dropdown { display: none; }
-
-header > .dropdown a {
-    font-size: 0;
-}
-
-header > .dropdown a::before {
-    content: "\f0c9";
-    margin-right: 15px;
-    color: rgba(175, 170, 177, 1);
-    font-size: 30px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
 }
 
 /* Banner Section */
@@ -405,7 +406,7 @@ header > .dropdown a::before {
     width: 57.22%;
     margin-right: auto;
     margin-left: auto;
-} 
+}
 
 #contact-us h3 {
     margin-bottom: 25px;
@@ -551,6 +552,7 @@ footer .about-links > .subscribe { flex-basis: 31.74%; }
 footer .copyright-info {
     color: rgba(70, 70, 70, 1);
     font-size: 13px;
+    line-height: 22px;
     text-align: center;
 }
 
@@ -653,9 +655,6 @@ footer .copyright-info > a:hover { color: white; }
         margin-bottom: 45px;
     }
 
-    #schedule > ul a { padding: 12px; }
-    #schedule-displayed ul.row li { padding: 15px 10px; }
-
     #schedule { 
         margin-top: 45px;
         margin-bottom: 45px;
@@ -665,6 +664,9 @@ footer .copyright-info > a:hover { color: white; }
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+    #schedule > ul a { padding: 12px; }
+    #schedule-displayed ul.row li { padding: 15px 10px; }
 
     #trainers ul {
         width: 75%;
@@ -703,9 +705,9 @@ footer .copyright-info > a:hover { color: white; }
     }
 
     #contact-us p { margin-bottom: 20px; }
-
     footer > .wrapper { padding: 45px 0; }
     footer .about-links { margin-bottom: 40px; }
+
     footer .about-links > .about {
         margin-right: 5%;
         flex-basis: 40%;
@@ -723,9 +725,7 @@ footer .copyright-info > a:hover { color: white; }
         margin: 0 5px;
     }
 
-    ul.carousel-dots {
-        margin-top: 10px;
-    }
+    ul.carousel-dots { margin-top: 10px; }
 
     .fifty-percent > h3 {
         width: 100%;
@@ -741,7 +741,12 @@ footer .copyright-info > a:hover { color: white; }
         text-align: center;
     }
 
-    header { width: calc(100% - 20px); }
+    header { 
+        width: calc(100% - 20px);
+        top: 10px; 
+    }
+
+    header h1 { padding-top: 5px; }
 
     header ul {
         margin-left: 15px;
@@ -749,15 +754,15 @@ footer .copyright-info > a:hover { color: white; }
     }
 
     header ul li { margin-right: 15px; }
+    header ul li:not(.selected) { display: none; }
+    header li a { padding: 5px 0; }
     header > .dropdown { display: block; }
 
     #banner h2 {
-        width: 50%;
+        width: 80%;
         font-size: 26px;
         line-height: 36px;
     }
-
-    header ul li:not(.selected) { display: none; }
 
     #content-stats {
         padding: 30px 0;
@@ -808,5 +813,133 @@ footer .copyright-info > a:hover { color: white; }
     #schedule { 
         margin-top: 30px;
         margin-bottom: 30px;
+        text-align: center;
     }
+
+    #schedule > .dropdown {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #schedule > ul {
+        margin-right: 30px;
+        display: inline-block;
+    }
+
+    #schedule > ul > li:not(.selected) { display: none; }
+
+    #schedule > ul a { padding: 10px; }
+    #schedule-displayed ul.row li { padding: 10px; }
+
+    #trainers ul {
+        width: 100%;
+        margin: 20px auto 0 auto;
+    }
+
+    #trainers ul li {
+        margin-bottom: 29px;
+        flex: 0 0 100%;
+        flex-direction: column-reverse;
+    }
+
+    #trainers li > div {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #featured-services { 
+        margin-top: 39px;
+        padding-bottom: 30px; 
+    }
+
+    #featured-services ul.services { flex-direction: column; }
+
+    #featured-services ul.services > li { 
+        padding: 20px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    #featured-services ul.services figure { margin-bottom: 15px; }
+    #featured-services ul.services img { margin: 0 auto; }
+
+    #featured-services ul.services h4 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    #featured-services > .carousel-dots { display: none; }
+    #contact-us > .wrapper {  padding: 30px 0; }
+
+    #contact-us > .wrapper > * {
+        min-width: unset;
+        width: 100%;
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    #contact-us h3 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    #contact-us p { text-align: center; }
+
+    #first-name, #last-name {
+        width: 100%;
+        display: block;
+    }
+    
+    #first-name { margin-right: 0; }
+    #contact-us form input, #contact-us form textarea { padding: 8px; }
+    #contact-us form > * { margin-bottom: 10px; }
+    #contact-us form > div { text-align: center; }
+
+    #contact-us form #contact-us-submit {
+        width: unset;
+        padding: 10px;
+    }
+
+    footer > .wrapper { padding: 30px 0; }
+
+    footer .about-links { 
+        margin-bottom: 25px;
+        flex-direction: column;
+    }
+
+    footer .about-links > * { margin-bottom: 20px; }
+    footer .about-links > *:last-child { margin-bottom: 0; }
+
+    footer .about-links > .about {
+        margin-right: 0;
+        flex-basis: unset;
+    }
+    
+    footer .about-links > .links { margin-right: 0; }
+    footer .about-links > .subscribe { flex-basis: unset; }
+
+    .about-links > * > h4 { 
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .about-links > * > p {
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .links > ul > li { 
+        margin-bottom: 10px;
+        text-align: center; 
+    }
+
+    .subscribe > p { margin-bottom: 10px; }
+    .subscribe > form { justify-content: center; }
+    #subscribe-email-id { padding: 8px; }
+    #subscribe-submit { padding: 10px; }
+    footer .copyright-info { line-height: 18px; }
 }
